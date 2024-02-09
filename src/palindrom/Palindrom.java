@@ -17,7 +17,8 @@ public class Palindrom {
         
         
         szoveg = szoveg.toLowerCase();
-        szoveg = szoveg.replaceAll("\\s[?]","");
+        szoveg = szoveg.replaceAll("[^a-z0-9öüóőúéáűí]","");
+        //reguláris: \\s[$&3,:;=:@|'<>.^*()%!-] <- vagy ez vagy a fenti
         //System.out.println("szoveg: "+szoveg);
         /* for átírása while-ra
         int i,j;
